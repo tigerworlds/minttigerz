@@ -99,9 +99,47 @@ function decrement() {
 
 function updateImage() {
     if(isConnected) {
-        document.querySelector('#tigerImage').src = chosenMints + ".png";
+		if(chosenMints==1){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b1179b3c9b4b3c7b1645_1.png";
+		}
+		else if(chosenMints==2){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b117bf7adc371f0f2cf2_2.png";
+		}
+		else if(chosenMints==4){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b1178425f92cc5f75974_4.png";
+		}
+		else if(chosenMints==5){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b11714a2ac6cb11cdc3f_5.png";
+		}
+		else{
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b117c504967766a489ab_3.png";
+		}
     } else {
-        document.querySelector('#tigerImage').src = chosenMints + "g.png";
+        if(chosenMints==1){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b117e45b2d8748911311_1g.png";
+		}
+		else if(chosenMints==2){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b1174df59bf54a3f4433_2g.png";
+		}
+		else if(chosenMints==4){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b1174df59b11a73f4434_4g.png";
+		}
+		else if(chosenMints==5){
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b117d36ebcb1c5dcf967_5g.png";
+		}
+		else{
+			
+			document.querySelector('#tigerImage').src = "https://uploads-ssl.webflow.com/628e692751b1fda18a4d24d5/62c8b11709e7a2fdf8d9beae_3g.png";
+		}
     }
 }
 
